@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+    //declarar variables
     private EditText txtFrase;
     private Button btnPalabras;
     private Button btnCaracteres;
