@@ -49,6 +49,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    public void onClick(View boton){
+        String frase = txtFrase.getText().toString();
+
+        Intent intent = new Intent(MainActivity.this, Solucion2Activity.class);
+        Bundle bundle = new Bundle();
+
+        bundle.putString("FRASE", frase);
+        Bundle.putInt("BOTON",boton.getId());
+
+        intent.putExtra(bundle);
+
+    }
     private void crearNuevaActividad(String mensaje){
         Intent intent = new Intent(MainActivity.this, MostrarResultadoActivity.class);
         Bundle bundle = new Bundle();

@@ -13,6 +13,9 @@
         android:theme="@style/Theme.EjercicioEnviarYRecibir1"
         tools:targetApi="31">
         <activity
+            android:name=".Solucion2Activity"
+            android:exported="false" />
+        <activity
             android:name=".MostrarResultadoActivity"
             android:exported="false" />
         <activity
